@@ -69,36 +69,6 @@ Accuracy is not used as the headline metric — with a ~95/5 class split, a mode
 - The model should be deployed as a **decision-support signal alongside clinical judgement**, not a standalone diagnostic tool — the small number of positive cases (249) means recall estimates carry real uncertainty and should be validated on a larger, prospective sample before wider use.
 - SMOTE's synthetic points can occasionally produce clinically implausible combinations (e.g. a child with a senior's risk profile); class weighting was preferred for the final Random Forest model on this dataset.
 
-## Repository structure
-
-```
-├── README.md
-├── stroke_prediction.ipynb       # Full analysis notebook
-├── stroke_prediction.html        # Rendered HTML export (submission format)
-├── healthcare-dataset-stroke-data.csv
-└── requirements.txt
-```
-
-## Setup & usage
-
-```bash
-git clone https://github.com/Amnasayeeq/stroke-prediction.git
-cd stroke-prediction
-pip install -r requirements.txt
-jupyter notebook stroke_prediction.ipynb
-```
-
-## Requirements
-
-```
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-imbalanced-learn
-shap
-```
 
 ## Limitations
 
